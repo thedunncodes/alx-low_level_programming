@@ -1,6 +1,5 @@
-// Online C compiler to print a line followed by standard error
+/* Online C compiler to print a line followed by standard error*/
 #include <stdio.h>
-#include <unistd.h>
 /**
  * main - A program that prints a line to standard error
  *
