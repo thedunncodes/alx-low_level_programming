@@ -3,7 +3,7 @@
 
 /**
  * main - Write a program that prints _putchar, followed by a new line.
- *
+ * Description : to print _putchar
  * Return: Always 0 (Success)
  */
 int main(void)
@@ -14,12 +14,6 @@ int main(void)
 
 	return (0);
 }
-
-/**
- * main - substitution
- *
- * Return: Always 0 (Success)
- */
 
 void hello(char name[])
 {
