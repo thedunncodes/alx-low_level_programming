@@ -16,7 +16,7 @@ int main(void)
 	return (0);
 }
 
-void alphabet(char ch);
+void print_alphabet(char ch);
 {
 	ch;
 
