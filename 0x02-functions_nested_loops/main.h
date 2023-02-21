@@ -1,4 +1,4 @@
 void hello(char name[])
 {
-	printf("\n%s", name);
+	printf("%s\n", name);
 }
