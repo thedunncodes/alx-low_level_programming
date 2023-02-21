@@ -15,6 +15,12 @@ int main(void)
 	return (0);
 }
 
+/**
+ * main - substitution
+ *
+ * Return: Always 0 (Success)
+ */
+
 void hello(char name[])
 {
 	printf("%s\n", name);
