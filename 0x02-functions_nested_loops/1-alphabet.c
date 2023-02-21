@@ -4,7 +4,7 @@
 /**
  * main - Write a function that prints the alphabet,
  * in lowercase, followed by a new line.
- *
+ * Description: prints alphabet in lower case
  * Return: Always 0 (Success)
  */
 int main(void)
@@ -16,7 +16,7 @@ int main(void)
 	return (0);
 }
 
-void print_alphabet(char ch);
+void print_alphabet(char ch)
 {
 	ch;
 
