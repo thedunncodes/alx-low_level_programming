@@ -1,4 +1,4 @@
-void _putchar(char name[])
+void hello(char name[])
 {
-	printf("%s\n", name);
+	printf("\n%s", name);
 }

@@ -9,7 +9,8 @@
 int main(void)
 {
 	char name[] = "_putchar";
-	_putchar();
+
+	hello(name);
 
 	return (0);
 }
