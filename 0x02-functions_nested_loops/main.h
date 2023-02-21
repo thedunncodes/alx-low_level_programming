@@ -1,4 +1,5 @@
-void _putchar()
+char *_putchar()
 {
 	printf("me");
+	return (0);
 }
