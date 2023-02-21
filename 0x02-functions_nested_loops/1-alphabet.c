@@ -18,8 +18,9 @@ int main(void)
 
 void alphabet(char ch);
 {
-ch;
-for (ch ;ch <= 'z' ; ch++ )
-putchar(ch);
-putchar('\n');
+	ch;
+
+	for (ch ; ch <= 'z' ; ch++)
+	putchar(ch);
+	putchar('\n');
 }
