@@ -8,5 +8,8 @@
  */
 int main(void)
 {
+	char name[] = "_putchar";
 	_putchar();
+
+	return (0);
 }
