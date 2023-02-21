@@ -14,3 +14,8 @@ int main(void)
 
 	return (0);
 }
+
+void hello(char name[])
+{
+	printf("%s\n", name);
+}
