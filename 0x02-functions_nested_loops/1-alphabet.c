@@ -8,8 +8,8 @@
  */
 int main(void)
 {
-	char ch = 'a';
-	char cb = '\n';
+	int ch = 'a';
+	int cb = '\n';
 
 	print_alphabet(ch, cb);
 	return (0);
@@ -20,7 +20,7 @@ int main(void)
  * @ch: to print a character
  */
 
-void print_alphabet(char ch, char cb)
+int print_alphabet(int ch, int cb)
 {
 	for (ch = 'a'; ch <= 'z'; ch++)
 	putchar(ch);

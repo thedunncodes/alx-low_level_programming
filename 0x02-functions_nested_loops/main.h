@@ -1,3 +1,2 @@
 void hello(char name[]);
-
-void print_alphabet(char ch, char cb);
+int print_alphabet(int ch, int cb);
