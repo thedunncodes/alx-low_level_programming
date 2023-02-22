@@ -2,7 +2,7 @@
 
 /**
  *_abs - this computes the absolute value of an integer
- * @r: An integre input
+ * @r: An integre input.
  * Return: Absolut value of number r
  */
 int _abs(int r)
