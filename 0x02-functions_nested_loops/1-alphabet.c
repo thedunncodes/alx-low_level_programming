@@ -7,23 +7,22 @@
  * print_alphabet: prints alphabet in lower case
  * Return: Always 0 (Success)
  */
-
 int main(void)
 {
-	print_alphabet();
+	char ch = 'a';
+
+	print_alphabet(ch);
+	putchar(ch);
 	return (0);
 }
 
 /**
- * print_alphabet:  prints alphabet in lower case
- * ch: to print a character
+ * print_alphabet - prints alphabet in lower case
+ * @ch: to print a character
  */
 
-void print_alphabet(void)
+void print_alphabet(char ch)
 {
-	char ch = 'a';
-
-	for (ch = 'a'; ch <= 'z'; ch++)
-	putchar(ch);
+	for (ch; ch <= 'z'; ch++)
 	putchar('\n');
 }
