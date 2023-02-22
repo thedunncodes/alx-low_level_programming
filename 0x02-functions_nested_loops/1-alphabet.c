@@ -10,7 +10,6 @@
 int main(void)
 {
 	char ch = 'a';
-	char z;
 
 	print_alphabet(ch);
 
