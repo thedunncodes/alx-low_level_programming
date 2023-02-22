@@ -23,6 +23,9 @@ int main(void)
 
 int print_alphabet(int ch, int cb)
 {
+	int ch = 'a';
+	int cb = '\n';
+
 	for (ch = 'a'; ch <= 'z'; ch++)
 	putchar(ch);
 	putchar(cb);
