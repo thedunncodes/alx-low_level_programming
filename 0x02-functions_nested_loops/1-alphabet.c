@@ -12,7 +12,7 @@ int main(void)
 	char ch = 'a';
 
 	print_alphabet(ch);
-
+	putchar(ch);
 	return (0);
 }
 
@@ -24,6 +24,5 @@ int main(void)
 void print_alphabet(char ch)
 {
 	for (ch; ch <= 'z'; ch++)
-	putchar(ch);
 	putchar('\n');
 }
