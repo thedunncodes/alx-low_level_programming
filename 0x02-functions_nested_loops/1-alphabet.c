@@ -8,9 +8,6 @@
  */
 int main(void)
 {
-	int ch = 'a';
-	int cb = '\n';
-
 	print_alphabet(ch, cb);
 	return (0);
 }
