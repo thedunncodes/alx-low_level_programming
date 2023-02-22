@@ -11,7 +11,7 @@ int main(void)
 {
 	char ch = 'a';
 
-	print_alphabet('ch');
+	print_alphabet(ch);
 	return (0);
 }
 
