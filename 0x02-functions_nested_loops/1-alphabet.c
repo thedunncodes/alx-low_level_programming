@@ -18,6 +18,7 @@ int main(void)
 /**
  * print_alphabet - prints alphabet in lower case
  * @ch: to print a character
+ * return: (sucess)
  */
 
 int print_alphabet(int ch, int cb)
@@ -25,4 +26,6 @@ int print_alphabet(int ch, int cb)
 	for (ch = 'a'; ch <= 'z'; ch++)
 	putchar(ch);
 	putchar(cb);
+
+	return (0);
 }
