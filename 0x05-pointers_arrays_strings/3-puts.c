@@ -7,5 +7,5 @@
 void _puts(char *str)
 {
 	fputs(str, stdout);
-	fputs("\n", stdout);
+	_putchar("\n");
 }
