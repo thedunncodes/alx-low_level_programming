@@ -5,12 +5,13 @@
 /**
  * _strlen - function to print string length
  * @len: variable to hold strlen
+ * Return: returns n
  */
 
 int _strlen(char *s)
 {
-	static int n;
+	int n;
 	n = strlen(s);
 
-	return (0);
+	return (n);
 }
