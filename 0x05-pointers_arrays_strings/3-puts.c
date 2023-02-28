@@ -2,7 +2,7 @@
 #include "main.h"
 /**
  * _puts - function to write to stdout
- * str - string to point to
+ * @str: string to point to
  */
 
 void _puts(char *str)
