@@ -4,13 +4,14 @@
 
 /**
  * _strlen - function to print string length
- * @len: variable to hold strlen
+ * @s: replaces str
  * Return: returns n
  */
 
 int _strlen(char *s)
 {
 	int n;
+
 	n = strlen(s);
 
 	return (n);
