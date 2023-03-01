@@ -3,18 +3,15 @@
 #include "main.h"
 
 /**
- * main - so concatenate s2 to s1
+ * _strcat - so concatenate s2 to s1
  * @dest: s1 holder
  * @src: s2 holder
- * @cat: character variable
- * Return: Always 0.
+ * Return: dest.
  */
 
 char *_strcat(char *dest, char *src)
 {
-	char cat;
+	strcat(dest, src);
 
-	cat = strcat(dest, src);
-
-	/*return (dest, src);*/
+	return (dest);
 }
