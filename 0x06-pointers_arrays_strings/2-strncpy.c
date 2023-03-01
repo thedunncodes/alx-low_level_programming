@@ -6,7 +6,8 @@
  * _strncat - so concatenate some characters of s2 to s1
  * @dest: s1 holder
  * @src: s2 holder
- * Return: dest.
+ * @n: integer variable
+ * Return: dest
  */
 
 char *_strncat(char *dest, char *src, int n)
