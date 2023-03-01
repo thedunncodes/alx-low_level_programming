@@ -6,6 +6,7 @@
  * _strncat - so concatenate some characters of s2 to s1
  * @dest: s1 holder
  * @src: s2 holder
+ * @n: integer variable
  * Return: dest.
  */
 
