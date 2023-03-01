@@ -3,7 +3,7 @@
 #include "main.h"
 
 /**
- * _strncpy - so concatenate some characters of s2 to s1
+ * _strncpy - function that copies a string
  * @dest: s1 holder
  * @src: s2 holder
  * @n: integer variable
