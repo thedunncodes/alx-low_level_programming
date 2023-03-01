@@ -6,8 +6,7 @@
  * _strcmp - to compare two strings
  * @s1: arg1 holder
  * @s2: arg2 holder
- * @a: integer variable
- * Return: a.
+ * Return: a
  */
 
 int _strcmp(char *s1, char *s2)
