@@ -26,5 +26,5 @@ void reverse_array(int *a, int n)
 }
 	putchar('\n');
 
-	/*exit(0);*/
+	exit(0);
 }
