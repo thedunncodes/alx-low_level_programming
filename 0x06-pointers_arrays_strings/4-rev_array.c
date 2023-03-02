@@ -3,10 +3,11 @@
 #include "main.h"
 
 /**
- * reverse_array - a function that reverses the content of an array of integers.
+ * reverse_array - a function that reverses
+ * the content of an array of integers.
  * @n: size of array 'a'
  * @a: array 'a'
- */ 
+ */
 
 void reverse_array(int *a, int n)
 {
