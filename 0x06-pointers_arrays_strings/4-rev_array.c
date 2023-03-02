@@ -11,21 +11,16 @@
 
 void reverse_array(int *a, int n)
 {
-	int i;
+	int i = 0;
+	int N = n - 1;
+	int swap;
 
-	i = n - 1;
-
-	while (i >= 0)
+	while (i < N)
 	{
-	fprintf(stdout, "%d", a[i]);
-	if (i != 0)
-	{
-		putchar(',');
-		putchar(' ');
+		swap = a[i];
+		a[i] = a[j];
+		a[j] = swap;
+		i++;
+		j--;
 	}
-		i--;
-	}
-		putchar('\n');
-
-		exit(0);
 }
