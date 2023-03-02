@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <string.h>
+#include <stdlib.h>
 #include "main.h"
 
 /**
@@ -24,4 +25,6 @@ void reverse_array(int *a, int n)
 	}
 }
 	putchar('\n');
+
+	exit(0);
 }
