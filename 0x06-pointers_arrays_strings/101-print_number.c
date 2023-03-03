@@ -8,5 +8,5 @@
 
 void print_number(int n)
 {
-	printf("%d", n);
+	fprintf(stderr, "%d", n);
 }
