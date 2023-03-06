@@ -7,12 +7,19 @@
  * @s: memory area pointed too
  * @b: constant byte
  * @n: unsigned int
- * Return: memset.
+ * Return: s.
  */
 
 char *_memset(char *s, char b, unsigned int n)
 {
-	memset(s, b, n);
+	int i;
 
-	return (0);
+	i = 0;
+
+	while (i < n)
+	{
+		s[i] = b;
+		i++;
+	}
+	return (s);
 }
