@@ -35,8 +35,8 @@ char *_strchr(char *s, char c)
 	}
 	if (s[i] != c)
 	{
-		return ((char *) &s[i]);
+		return (0);
 	}
 
-	return (0);
+	return ((char *) &s[i]);
 }
