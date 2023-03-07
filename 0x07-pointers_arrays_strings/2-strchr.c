@@ -11,9 +11,9 @@
 
 char *_strchr(char *s, char c)
 {
-	int i;
-	int j;
-	int len;
+	unsigned int i;
+	unsigned int j;
+	unsigned int len;
 
 	i = 0;
 	j = 0;
