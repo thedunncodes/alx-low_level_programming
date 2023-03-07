@@ -27,7 +27,7 @@ char *_strchr(char *s, char c)
 		}
 		if (j == 1)
 		{
-			putchar(s[i]);
+			_putchar(s[i]);
 		}
 			i++;
 		}
