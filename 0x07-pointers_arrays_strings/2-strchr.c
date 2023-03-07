@@ -31,7 +31,8 @@ char *_strchr(char *s, char c)
 			return ((char *) &s[i]);
 		}
 			i++;
-		}
+	}
 
 		return ((char *) &s[i]);
+		return (0);
 }
