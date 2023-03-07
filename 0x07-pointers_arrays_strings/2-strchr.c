@@ -7,7 +7,7 @@
  * @s: where the first occurence of 'c' is returned to
  * and and printed to the end
  * @c: character to return to 's'
- * Return: Always 0.
+ * Return: char s[i] for success and NULL for fail
  */
 
 char *_strchr(char *s, char c)
@@ -33,6 +33,9 @@ char *_strchr(char *s, char c)
 		}
 			i++;
 	}
+	if (s[i] != c)
+	{
+		return (NULL);
+	}
 
-		return ((char *) &s[i]);
 }
