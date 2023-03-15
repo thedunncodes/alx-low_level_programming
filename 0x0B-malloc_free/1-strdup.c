@@ -16,12 +16,12 @@ char *_strdup(char *str)
 	int c;
 	char *s;
 
-	c = strlen(str);
-
-	if (str == 0)
+	if ((str == 0) || (str == NULL))
 	{
 		return (NULL);
 	}
+
+	c = strlen(str);
 
 	s = malloc(sizeof(*s) * (c + 1));
 	if (s == NULL)
@@ -30,7 +30,7 @@ char *_strdup(char *str)
 	}
 	for (i = 0; i < c; i++)
 	{
-		*(s + i) = *(str + i);
+		s[i] = str[i];
 	}
 
 	return (s);
