@@ -1,11 +1,10 @@
-#include <stdio.h>
 #include <stdlib.h>
 #include "main.h"
 /**
- * *create_array - prints buffer in hexa
+ * create_array - prints buffer in hexa
  * @c: specific char to be replicated/stored
  * @size: the size of the memory to print
- * Return: Nothing.
+ * Return: Apointer to the array or NULL if it fails
  */
 
 char *create_array(unsigned int size, char c)
@@ -17,8 +16,12 @@ char *create_array(unsigned int size, char c)
 	{
 		return (NULL);
 	}
+	if (size == NULL)
+	{
+		return (NULL);
+	}
 
-	s = malloc(sizeof(char) * size);
+	s = (char *)malloc(sizeof(char) * size);
 
 	for (i = 0; i < size; i++)
 	{
