@@ -11,9 +11,9 @@
 
 void *malloc_checked(unsigned int b)
 {
-	unsigned int *m;
+	void *m;
 
-	m = (int *)malloc(sizeof(*m) * b);
+	m = malloc(b);
 	if (m == NULL)
 	{
 		exit(98);
