@@ -4,6 +4,21 @@
 #include "main.h"
 
 /**
+ * _strlen -  a function that returns the length of a string.
+ * @s: An input string
+ * Return: Nothing
+ */
+
+int _strlen(char *s)
+{
+	int len = 0;
+
+	while (s[len] != '\0')
+		len++;
+	return (len);
+}
+
+/**
  * string_nconcat - a function that concatenates two strings
  * with a give number of size to be added to the
  * first string from the second string
@@ -12,6 +27,7 @@
  * @n: size of string 2 to be added to string 1
  * Return: pointer 'cat'
  */
+
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
@@ -24,8 +40,8 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (s2 == NULL)
 		s2 = "";
 
-	e = strlen(s1);
-	f = strlen(s2);
+	e = _strlen(s1);
+	f = _strlen(s2);
 
 	if (n >= f)
 		d = e + f;
