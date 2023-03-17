@@ -32,7 +32,7 @@ unsigned int _strlen(char *s)
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *cat;
-	unsigned int d, e, f;
+	unsigned int e, f;
 	unsigned int i, j;
 
 	if (s1 == NULL)
@@ -44,11 +44,9 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	f = _strlen(s2);
 
 	if (n >= f)
-		d = e + f;
-	else
-		d = e + n;
+		n = f;
 
-	cat = malloc(sizeof(*cat) * (d + 1));
+	cat = malloc(sizeof(*cat) * (e + n + 1));
 	if (cat == NULL)
 		return (NULL);
 
