@@ -9,9 +9,9 @@
  * Return: Nothing
  */
 
-int _strlen(char *s)
+unsigned int _strlen(char *s)
 {
-	int len = 0;
+	unsigned int len = 0;
 
 	while (s[len] != '\0')
 		len++;
