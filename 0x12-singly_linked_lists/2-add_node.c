@@ -1,4 +1,6 @@
 #include "lists.h"
+#include <string.h>
+
 
 /**
  * add_node - A function that adds a node to the head of linked list
