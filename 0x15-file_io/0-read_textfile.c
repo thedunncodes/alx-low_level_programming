@@ -41,7 +41,11 @@ ssize_t read_textfile(const char *filename, size_t letters)
 
 	rnum = write(1, buff, print);
 	if (rnum < 0)
+	{
+		free(buff);
+		close(fpo);
 		return (0);
+	}
 
 	close(fpo);
 	free(buff);
