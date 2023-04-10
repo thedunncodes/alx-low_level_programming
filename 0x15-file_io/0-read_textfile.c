@@ -32,7 +32,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	}
 
 	print = read(fpo, buff, letters);
-	if (print < 0)
+	if (print == -1)
 	{
 		free(buff);
 		close(fpo);
@@ -40,7 +40,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	}
 
 	rnum = write(1, buff, print);
-	if (rnum < 0)
+	if (rnum == -1)
 	{
 		free(buff);
 		close(fpo);
@@ -50,5 +50,5 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	free(buff);
 	close(fpo);
 
-	return ((ssize_t)rnum);
+	return (rnum);
 }
