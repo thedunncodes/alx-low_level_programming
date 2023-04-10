@@ -14,8 +14,9 @@
 
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	int fpo, print, rnum;
+	int fpo;
 	char *buff;
+	ssize_t print, rnum;
 
 	if (filename == NULL)
 		return (0);
@@ -39,7 +40,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		return (0);
 	}
 
-	rnum = write(1, buff, print);
+	rnum = write(STDOUT_FILENO, buff, print);
 	if (rnum == -1)
 	{
 		free(buff);
