@@ -1,51 +1,41 @@
 #include "hash_tables.h"
+#include <stdio.h>
 #include <string.h>
 
-/**
- * hash_table_set - This function adds an element to the hash table
- * @ht: the hash table to add/update the key/value to
- * @key: the key
- * @value: the value associated with key
- * Return: 1 succeeded, 0 otherwise
- */
-int hash_table_set(hash_table_t *ht, const char *key, const char *value)
-{
-	hash_node_t *new_node = NULL, *temp = NULL;
-	unsigned long int index = 0;
+int not_last_node(const hash_table_t *ht, hash_node_t *node);
 
-	if (ht == NULL || key == NULL || value == NULL)
-		return (0);
-	index = key_index((const unsigned char *)key, ht->size);
-	temp = ht->array[index];
-	while (temp != NULL)
+/**
+ * hash_table_print - This func prints the contents of a hash table
+ * @ht: The hash table to be print
+ */
+void hash_table_print(const hash_table_t *ht)
+{
+	unsigned long int i = 0, last_pos = 0;
+	hash_node_t *node = NULL;
+
+	if (ht == NULL)
+		return;
+	putchar('{');
+	if (ht)
 	{
-		if (strcmp(temp->key, key) == 0)
+		for (; i < ht->size - 1; i++)
 		{
-			free(temp->value);
-			temp->value = strdup(value);
-			if (temp->value == NULL)
-				return (0);
-			return (1);
+			if (ht->array[i] != NULL)
+				last_pos = i;
 		}
-		temp = temp->next;
+
+		for (i = 0; i <= last_pos; i++)
+		{
+			node = ht->array[i];
+			while (node)
+			{
+				printf("'%s': '%s'", node->key, node->value);
+				node = node->next;
+				if (i < last_pos - 1)
+					printf(", ");
+			}
+
+		}
 	}
-	new_node = malloc(sizeof(hash_node_t));
-	if (new_node == NULL)
-		return (0);
-	new_node->key = strdup(key);
-	if (new_node->key == NULL)
-	{
-		free(new_node);
-		return (0);
-	}
-	new_node->value = strdup(value);
-	if (new_node->value == NULL)
-	{
-		free(new_node->key);
-		free(new_node);
-		return (0);
-	}
-	new_node->next = ht->array[index];
-	ht->array[index] = new_node;
-	return (1);
+	printf("}\n");
 }
