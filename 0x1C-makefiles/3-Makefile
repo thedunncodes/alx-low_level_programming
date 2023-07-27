@@ -1,0 +1,28 @@
+CC=gcc
+SRC=main.c school.c
+OBJ = $(patsubst %.c, %.o, $(SRC))
+NAME=school
+RM=rm
+
+all: $(NAME)
+	
+$(NAME): $(OBJ)
+	$(CC) $(OBJ) -o $(NAME)
+	
+%.o: %.c
+	$(CC) -c $< -o $@
+
+.PHONY: clean oclean fclean re
+
+clean:
+	rm -f *~ $(NAME)
+
+oclean:
+	rm -f $(OBJ)
+
+fclean:
+	rm -f *~ $(NAME) $(OBJ)
+
+re:
+	rm -f $(OBJ)
+	@make all -f 3-Makefile
