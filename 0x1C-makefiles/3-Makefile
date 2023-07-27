@@ -2,7 +2,7 @@ CC=gcc
 SRC=main.c school.c
 OBJ = $(patsubst %.c, %.o, $(SRC))
 NAME=school
-RM=rm
+RM=rm -f
 
 all: $(NAME)
 	
@@ -15,14 +15,14 @@ $(NAME): $(OBJ)
 .PHONY: clean oclean fclean re
 
 clean:
-	rm -f *~ $(NAME)
+	$(RM) *~ $(NAME)
 
 oclean:
-	rm -f $(OBJ)
+	$(RM) $(OBJ)
 
 fclean:
-	rm -f *~ $(NAME) $(OBJ)
+	$(RM) *~ $(NAME) $(OBJ)
 
 re:
-	rm -f $(OBJ)
+	$(RM) $(OBJ)
 	@make all -f 3-Makefile
