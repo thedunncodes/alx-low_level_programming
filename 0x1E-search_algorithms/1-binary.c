@@ -41,7 +41,7 @@ int search(int *array, size_t start, size_t end, int value)
 
 	if (!(start > end))
 	{
-		printf("Searching in array:  ");
+		printf("Searching in array: ");
 		for (i = start; i <= end ; i++)
 		{
 			if (i != end)
