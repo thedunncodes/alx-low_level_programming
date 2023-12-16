@@ -8,6 +8,8 @@
  * Return: search function
  */
 
+int search(int *array, size_t start, size_t end, int value);
+
 int binary_search(int *array, size_t size, int value)
 {
 	size_t end;
